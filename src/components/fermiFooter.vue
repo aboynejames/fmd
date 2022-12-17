@@ -20,15 +20,7 @@
   </v-container>
 </template>
 
-<script>
-export default {
-  name: 'fermi-footer',
-  data: () => ({
-    model: 0,
-    items: [
-    ]
-  })
-}
+<script setup>
 </script>
 
 <style scoped>

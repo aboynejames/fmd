@@ -58,15 +58,7 @@
   </v-container>
 </template>
 
-<script>
-export default {
-  name: 'fermi-learn',
-  data: () => ({
-    model: 0
-  }),
-  methods: {
-  }
-}
+<script setup>
 </script>
 
 <style scoped>

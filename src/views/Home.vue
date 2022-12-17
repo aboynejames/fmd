@@ -10,23 +10,13 @@
   </v-container>
 </template>
 
-<script>
+<script setup>
 // import CaleAi from '@/components/caleAI'
 import HealthTheory from '@/components/healthTheory'
 import FermiLearn from '@/components/fermiLearn'
 import FermiFeatures from '@/components/fermiFeatures'
 import FermiFooter from '@/components/fermiFooter'
 
-export default {
-  name: 'CALE-Content',
-  components: {
-    // CaleAi,
-    HealthTheory,
-    FermiLearn,
-    FermiFeatures,
-    FermiFooter
-  }
-}
 </script>
 
 <style>

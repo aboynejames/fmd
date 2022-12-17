@@ -20,14 +20,10 @@
       <v-btn text><router-link to="/ethics">ethics</router-link> |</v-btn>
       <v-btn text><a href="">blog</a> |</v-btn>
       <v-btn text><a href="">code</a></v-btn>
-      <!-- <v-btn color="brown lighten-3">JOIN</v-btn> -->
+      <v-btn color="brown lighten-3">JOIN</v-btn>
   </v-app-bar>
 </template>
 
-<script>
-export default {
-  name: 'MenuNavigation',
-  data: () => ({
-  })
-}
+<script setup>
+
 </script>

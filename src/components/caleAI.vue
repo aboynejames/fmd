@@ -88,7 +88,8 @@
   </v-container>
 </template>
 
-<script>
+<script setup>
+/*
 import DownloadToolkit from '@/components/download/downloadToolkit'
 
 export default {
@@ -146,7 +147,7 @@ export default {
       this.$refs.form.resetValidation()
     }
   }
-}
+} */
 </script>
 
 <style scoped>

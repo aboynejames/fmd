@@ -53,8 +53,8 @@
   </v-container>
 </template>
 
-<script>
-export default {
+<script setup>
+/* export default {
   name: 'fermi-learn',
   data: () => ({
     model: 0,
@@ -85,7 +85,7 @@ export default {
       }
     }
   }
-}
+} */
 </script>
 
 <style scoped>

@@ -1,22 +1,15 @@
 <template>
   <v-app>
-    <menu-navigation />
+    <MenuNavigation />
     <v-main>
-      <router-view></router-view>
+      <RouterView />
     </v-main>
+    <v-footer>Health Coherence</v-footer>
   </v-app>
 </template>
 
-<script>
-import MenuNavigation from '@/components/MenuNavigation'
+<script setup>
+  import { RouterView } from 'vue-router'
 
-export default {
-  name: 'App',
-  components: {
-    MenuNavigation
-  },
-  data: () => ({
-    //
-  })
-}
+  import MenuNavigation from '@/components/MenuNavigation.vue'
 </script>
