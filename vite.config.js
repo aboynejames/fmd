@@ -16,6 +16,7 @@ export default defineConfig({
     }),
   ],
   define: { 'process.env': {} },
+  base: "/health/",
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -27,31 +27,37 @@
 
 <script setup>
   import { ref } from 'vue'
+  import imgUrl from '@/assets/four-health.png'
+  import imgUrl2 from '@/assets/mind.png'
+  import imgUrl3 from '@/assets/movement.png'
+  import imgUrl4 from '@/assets/sleep.png'
+  import imgUrl5 from '@/assets/food.png'
+  import imgUrl6 from '@/assets/lifeflow.png'
 
   const model = ref(0)
   const items = ref([
     {
-      src: 'src/assets/four-health.png',
+      src: imgUrl,
       button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     },
     {
-      src: 'src/assets/mind.png',
+      src: imgUrl2,
       button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     },
     {
-      src: 'src/assets/movement.png',
+      src: imgUrl3,
       button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     },
     {
-      src: 'src/assets/sleep.png',
+      src: imgUrl4,
       button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     },
     {
-      src: 'src/assets/food.png',
+      src: imgUrl5,
       button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     },
     {
-      src: 'src/assets/lifeflow.png',
+      src: imgUrl6,
       button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     }
   ])

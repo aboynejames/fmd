@@ -6,7 +6,7 @@
     <v-layout row center>
         <v-spacer />
         <v-flex xs11 sm11 md11>
-          CALE AI is an open source project using evolionary computing software and privacy preseving techniques to enable decentralized machine learning.
+          FermiAI is an open source project using evolionary computing software and privacy preseving techniques to enable decentralized machine learning.
         </v-flex>
         <v-spacer />
         <v-spacer />
@@ -14,7 +14,7 @@
     <v-layout row center>
         <v-spacer />
         <v-flex xs11 sm11 md11>
-          CALE is not very capable right now and goes throught testing before being offered for general use.  Each toolkit has a master switch to put CALE on or off.  We will provide more documenation and an audit trail of our testing before offering new services.
+          FermiAI is not very capable right now and goes throught testing before being offered for general use.  Each toolkit has a master switch to put FermiAI on or off.  We will provide more documenation and an audit trail of our testing before offering new services.
         </v-flex>
         <v-spacer />
         <v-spacer />

@@ -1,16 +1,16 @@
 <template>
   <v-container>
     <v-layout row>
-        <v-col xs12 class="text-xs-center display-1 font-weight-black my-5 color red lighten-5">FermiAI</v-col>
+        <v-col xs12 class="text-xs-center display-1 font-weight-black my-5 color red lighten-5">FermiAI - health coherence</v-col>
     </v-layout>
     <v-layout row wrap>
       <v-col xs12 sm12 md12>
         <v-card>
           <v-card-title primary-title>
             <div>
-                <h3 class="headline mb-0 font-weight-bold">Fasting Mimicking Diets Peer to Peer</h3>
+                <h3 class="headline mb-0 font-weight-bold">A peer to peer approach to health</h3>
                 <div style="word-break: break-word" class="spacing-playground pa-3">
-                  Aging, we all age.  How to do well?   Fasting, Fasting Mimicking Diets  FMD.
+                  
                 </div>
             </div>
           </v-card-title>
