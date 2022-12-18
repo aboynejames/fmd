@@ -1,10 +1,10 @@
 <template>
-  <v-container grid-list-lg>
+  <v-container>
     <v-layout row>
-        <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5 color red lighten-5">FermiAI</v-flex>
+        <v-col xs12 class="text-xs-center display-1 font-weight-black my-5 color red lighten-5">FermiAI</v-col>
     </v-layout>
     <v-layout row wrap>
-      <v-flex xs12 sm12 md12>
+      <v-col xs12 sm12 md12>
         <v-card>
           <v-card-title primary-title>
             <div>
@@ -15,7 +15,7 @@
             </div>
           </v-card-title>
         </v-card>
-      </v-flex>
+      </v-col>
     </v-layout>
   </v-container>
 </template>

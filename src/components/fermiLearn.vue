@@ -1,94 +1,89 @@
 <template>
-  <v-container grid-list-lg>
-    <v-layout row>
-        <v-flex xs12 class="text-xs-center display-1 font-weight-black my-5 color red lighten-5">Health peer to peer</v-flex>
-    </v-layout>
-    <v-layout row center>
-        <v-spacer />
-        <v-flex xs12 sm12 md3 class="open-left">
-          <v-img src="../assets/logo.png" max-width="400" class="left-perspective">
-          </v-img>
-          <v-card>
-            <v-card-title primary-title>
-              <div>
-                  <h3 class="headline mb-0 font-weight-bold text-wrap">Join experiment</h3>
-              </div>
-            </v-card-title>
-          </v-card>
-        </v-flex>
-        <v-flex xs11 sm11 md8 class="open-right">
-          <v-carousel class="right-perspective">
-            <v-carousel-item
-              v-for="(item,i) in items"
-              :key="i"
-              :src="item.src"
-              reverse-transition="fade-transition"
-              transition="fade-transition"
-            >
-              <v-row justify="center" class="middle-top">
-                <!-- <v-btn
-                  color="orange"
-                  x-large
-                  elevation="12"
-                  raised
-                  @click="bboxMobile(item)"
-                >
-                  {{ item.button.toolkit }}
-                </v-btn> -->
-                <v-btn
-                  color="orange"
-                  x-large
-                  elevation="12"
-                  raised
-                  @click="bboxJoin(item)"
-                >
-                  {{ item.button.mobile }}
-                </v-btn>
-              </v-row>
-            </v-carousel-item>
-          </v-carousel>
-        </v-flex>
-        <v-spacer />
-    </v-layout>
+  <v-container>
+    <v-carousel
+      cycle
+      height="400"
+      hide-delimiter-background
+      show-arrows="hover"
+    >
+      <v-carousel-item
+        v-for="(slide, i) in slides"
+        :key="i"
+        :src="items[i]"
+      >
+        <v-sheet
+          :color="colors[i]"
+          height="100%"
+          tile
+        >
+          <v-img
+          :src="items[i]"
+          ></v-img>
+        </v-sheet>
+      </v-carousel-item>
+    </v-carousel>
   </v-container>
 </template>
 
 <script setup>
-/* export default {
-  name: 'fermi-learn',
-  data: () => ({
-    model: 0,
-    items: [
-      {
-        src: require('@/assets/lifeflow.png'),
-        button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
-      }
-    ]
-  }),
-  methods: {
-    bboxMobile (select) {
-      console.log('download mobile ')
-      console.log(select)
-      if (select.button.bbox === 'bioregion') {
-        window.open('', '_self')
-      } else if (select.button.bbox === 'airquality') {
-        window.open('', '_self')
-      } else if (select.button.bbox === 'riverflow') {
-        window.open('', '_self')
-      }
+  import { ref } from 'vue'
+
+  const model = ref(0)
+  const items = ref([
+    {
+      src: 'src/assets/four-health.png',
+      button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     },
-    bboxJoin (select) {
-      console.log('join click for ')
-      console.log(select)
-      if (select.button.bbox === 'health') {
-        window.open('', '_self')
-      }
+    {
+      src: 'src/assets/mind.png',
+      button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
+    },
+    {
+      src: 'src/assets/movement.png',
+      button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
+    },
+    {
+      src: 'src/assets/sleep.png',
+      button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
+    },
+    {
+      src: 'src/assets/food.png',
+      button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
+    },
+    {
+      src: 'src/assets/lifeflow.png',
+      button: { mobile: 'Download App soon', toolkit: 'Toolkit', bbox: 'healthmodel' }
     }
+  ])
+
+  const colors = ref([
+    'indigo',
+    'warning',
+    'pink darken-2',
+    'red lighten-1',
+    'deep-purple accent-4'
+  ])
+  
+  const slides = ref([
+    'First',
+    'Second',
+    'Third',
+    'Fourth',
+    'Fifth',
+  ])
+
+  function bboxMobile (select) {
+    console.log('download mobile ')
+    console.log(select)
+  } 
+
+  function bboxJoin (select) {
+    console.log('join click for ')
   }
-} */
 </script>
 
 <style scoped>
+
 .open-left {
   margin-top: 3em;
   perspective: 1000px;
